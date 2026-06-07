@@ -84,3 +84,16 @@ For ex. we've a cancer detection model which classifies whether the patient is d
     Safety-Critical Systems
     → Optimize Recall
     (Missing dangerous events is costly)
+
+### Evaluation
+- We must have offline evaluation pipeline which is golden dataset which should cover all possible scenarios
+- Online evaluations can be done by exposing live data to the model and comparing output with some manual labelled outcomes or maybe with user feedback
+
+### System Model
+- Before we ingest our samples into model, we should definately try business driven rules/approaches to make predict the labels which could make our task easier and reduce load on the models
+
+### Inference
+Inference is basically we've trained the model and now we want to use it for real time data predictions. There are 2 kinds of inferences which we can implement:
+
+- Batch Processing: We generate outputs on batch of data as a background running process and save it into our tables which user can query whenever data is ready. 
+- Real Time Processing: Making our model available as real time API so we can supply results in real time to the users

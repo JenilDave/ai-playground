@@ -10,6 +10,9 @@ To built any ML product, it follows the same approach in making any product in g
 - Identify the Product real time end to end flow to understand where the ML component will lye.
 - Act as ML engineer and define your role & focus onto how will you improve user experience by your contribution
 
+### Data Ingestion
+One of the important part to make sure our model performs really well is Data. We must have all data properly classified/labelled available with manual or automated QA validation. Once data is ready, we can go ahead with Model Training
+
 ### Model Metrics
 When you identify which model needs to be built, you'll have a general idea on what it actually does. Based on that you've to give metrics based defination to the model on how it should behave. Below are the metrics generally used to define its behaviour:
 

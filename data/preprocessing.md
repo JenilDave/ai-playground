@@ -23,3 +23,58 @@ Clean the Data before pushing to the model. It depends on the type of data, what
 ### Extraction
 - Extract Signals from existing features / combine existing features
 - Apply Transfer Learning which is using pre-trained models to extract some features and supply them as input to your model
+
+### Encoding
+
+One-Hot Encoding
+Its a technique used to convert categorical data into a numerical format by creating a separate binary column for each category.
+
+#### Example
+
+Input:
+
+| Color |
+|---------|
+| Red |
+| Blue |
+| Green |
+
+After One-Hot Encoding:
+
+| Color_Red | Color_Blue | Color_Green |
+|------------|------------|-------------|
+| 1 | 0 | 0 |
+| 0 | 1 | 0 |
+| 0 | 0 | 1 |
+
+---
+
+### Binning (Discretization)
+It is the process of converting continuous numerical values into discrete intervals (bins or buckets).
+
+#### Example
+
+Input Ages:
+
+```text
+[18, 22, 25, 35, 42, 55, 67]
+```
+
+After Binning:
+
+| Age | Bin |
+|------|------|
+| 18 | Young |
+| 22 | Young |
+| 25 | Young |
+| 35 | Middle |
+| 42 | Middle |
+| 55 | Senior |
+| 67 | Senior |
+
+Why Use Binning?
+
+- Reduces noise in data.
+- Makes patterns easier for some models to learn.
+- Converts numerical data into categories.
+- Helps handle non-linear relationships.
